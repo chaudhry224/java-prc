@@ -4,12 +4,12 @@ import java.util.Scanner;
 
 public class UnadvancedDnD {
 	public static void main(String[] args) {
-        
+         Scanner sc = new Scanner(System.in);
         System.out.print("Please enter an action: ");
         
         Boolean z = true;
         while (z == true){
-            Scanner sc = new Scanner(System.in);
+           
             String c = sc.next();
         switch(c){
             case "x":  System.out.println("Bye!");
