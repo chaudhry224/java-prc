@@ -13,18 +13,19 @@ public class Marks {
         Scanner sc = new Scanner(System.in);
         int in = sc.nextInt();
         
-        
+           sc.nextLine();
         int[] no = new int[in]; 
         String[] name = new String[in];
          
         for (int i = 0; i != in; i++) {
         System.out.print("Enter name of student " +(n + 1)  + ": ");
-        name[i] = sc.next();
+        name[i] = sc.nextLine();
    
         System.out.print("Enter mark " + (n+1) + ": " ); 
-           sc.nextLine();
+        
         no[i] = sc.nextInt(); 
           n++;
+             sc.nextLine();
         }
 
         for (int i = 0; i != in; i++) {
@@ -58,4 +59,3 @@ public class Marks {
      System.out.println("The worst student is " + name[min]);
     }
 }
-
